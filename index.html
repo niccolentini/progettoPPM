@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.jpeg">
+
+    <meta charset="UTF-8">
+    <title>Tuttosport</title>
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-bDGMm+5HztjpL0KQzlwWyLcnCIO4/M4+5K5zp5f5ipDtuYMC5S5P+yxKwt00BwobG4H1n4cF9GZHpJOgjFRq3Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<header>
+<nav class="navbar fixed-top">
+    <div class="container-fluid" style="flex-wrap: nowrap">
+        <button class="navbar-toggler ms bi-justify-left" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="tuttosport.png" alt="Tuttosport.com" class="responsive" style="border-radius: 10px">
+        </a>
+
+
+        <div class="d-flex justify-content-end align-items-center" style="flex-grow: 1;">
+            <a href="#" class="btn search btn-outline-light">
+                <span class="bi bi-search"></span>
+            </a>
+            <span class="divisor">_</span>
+            <button class="btn btn-outline-danger me-2 mx-2"><i class="fas fa-video"></i> <strong>LIVE</strong> </button>
+            <button class="btn journal btn-outline-light me-2"><i class="far fa-newspaper"></i> <strong>LEGGI IL GIORNALE</strong></button>
+            <button class="btn btn-success "><i class="fas fa-bookmark"></i> <strong>ABBONATI</strong></button>
+            <a href="#" class="btn bell">
+                <span class="bi bi-bell"></span>
+            </a>
+            <a href="#" class="btn person">
+                <span class="bi bi-person"></span>
+            </a>
+
+        </div>
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="tuttosport2.png" class="responsive" style="margin-left: 40px" alt="tuttosport.com"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3 style="color: #8b351d; font-weight: 700; font-size: x-large;">Naviga le sezioni</h3>
+                <hr class="dropdown-divider">
+
+                <form class="d-flex mt-3 mb-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cosa stai cercando?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><span class = "bi bi-search"></span></button>
+                </form>
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">LoremIpsum1</a>
+                    </li>
+                    <li><hr class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >LoremIpsum2</a>
+                    </li>
+                    <li><hr class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >LoremIpsum3</a>
+                    </li>
+                    <li><hr class="divider"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >LoremIpsum4</a>
+                    </li>
+                    <li><hr class="divider"></li>
+                </ul>
+                    <h3 style="color: #8b351d; font-weight: 700; font-size: x-large;">I nostri social</h3>
+
+                    <div class="row mt-3">
+                        <div class="col-3">
+                            <a href="#" class="text-dark d-block">
+                                <i class="bi bi-facebook fs-4 mb-2"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="text-dark d-block">
+                                <i class="bi bi-instagram fs-4 mb-2"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="text-dark d-block">
+                                <i class="bi bi-twitter fs-4 mb-2"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="text-dark d-block">
+                                <i class="bi bi-telegram fs-4 mb-2"></i>
+                                <span>Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+
+<div class="container_img">
+    <a class="top_img_link" href="#"> <img class="img-fluid" src="https://picsum.photos/1080/349" alt="immagine principale"></a>
+</div>
+
+<div class="container_container">
+    <article class="container-title">
+        <div class="container-bi-title">
+            <div class="opener_title">
+                <span class="big_title"> LOREM IPSUM </span>
+            </div>
+        </div>
+            <h2 class="main_title">
+                <a class="main_link" href="#" > <b>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod <span style="color: rgb(153, 0, 0);">TEMPOR</span> !</b></a>
+            </h2>
+    </article>
+
+
+    <div class="container_info">
+        <time datetime="2023-04-17T09:00:31+02:00"><b>17<!-- -->.<!-- -->04<span class="dataeora">.<!-- -->2023</span></b>&nbsp;<!-- -->09:00</time>
+        <div><div class="taglist"><span class="dovesiamo">UniFi</span></div></div>
+    </div>
+<hr>
+
+    <section class="container_games">
+        <aside class="live_box">
+            <header class="live_box_header">
+                <h2 class="live_box_title">
+                    <a class="live_link" href="#"><b> Live ></b></a>
+                </h2>
+                <div class="tab_switcher">
+                    <button type="button" class="live_btn_1">Lorem</button>
+                    <button type="button" class="live_btn_2">Ipsum</button>
+                </div>
+            </header>
+
+            <div class="games_box">
+                <div class="row">
+                    <div class="col-12 col-lg-2">
+                        <a href="#" class="games_link" style="text-decoration: dashed">
+                            <div class="row">
+                                <div class="col-6 col-lg-12">
+                                    <div class="game_section">
+                                        <img src="https://picsum.photos/24/24" class="game_img" alt="img">
+                                        <span class="team_name"> Lorem </span>
+                                        <span class="team_score"> 0</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-12">
+                                    <div class="game_section2">
+                                        <img src="https://picsum.photos/24/23" class="game_img" alt="img">
+                                        <span class="team_name2"> Ipsum </span>
+                                        <span class="team_score"> 1</span>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <span>11.04.2023 </span>21:00
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <a href="#" class="games_link" style="text-decoration: dashed">
+                            <div class="row">
+                                <div class="col-6 col-lg-12">
+                                    <div class="game_section">
+                                        <img src="https://picsum.photos/23/24" class="game_img" alt="img">
+                                        <span class="team_name"> Lorem </span>
+                                        <span class="team_score"> 0</span>
+                                    </div>
+                                </div>
+                                    <div class="col-6 col-lg-12">
+                                        <div class="game_section2">
+                                            <img src="https://picsum.photos/23/23" class="game_img" alt="img">
+                                            <span class="team_name2"> Ipsum </span>
+                                            <span class="team_score"> 0</span>
+                                        </div>
+                                    </div>
+                                <div class="time">
+                                    <span>11.04.2023 </span>20:00
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <a href="#" class="games_link" style="text-decoration: dashed">
+                            <div class="row">
+                                    <div class="col-6 col-lg-12">
+                                        <div class="game_section">
+                                            <img src="https://picsum.photos/22/24" class="game_img" alt="img">
+                                            <span class="team_name"> Lorem </span>
+                                            <span class="team_score"> 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-12">
+                                        <div class="game_section2">
+                                            <img src="https://picsum.photos/24/23" class="game_img" alt="img">
+                                            <span class="team_name2"> Ipsum </span>
+                                            <span class="team_score"> 1</span>
+                                        </div>
+                                    </div>
+                                <div class="time">
+                                    <span>17.04.2023 </span>21:00
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-2 ">
+                        <a href="#" class="games_link" style="text-decoration: dashed">
+                            <div class="row">
+                                <div class="col-6 col-lg-12">
+                                    <div class="game_section">
+                                        <img src="https://picsum.photos/22/22" class="game_img" alt="img">
+                                        <span class="team_name"> Lorem </span>
+                                        <span class="team_score"> 0</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-12">
+                                    <div class="game_section2">
+                                        <img src="https://picsum.photos/22/23" class="game_img" alt="img">
+                                        <span class="team_name2"> Ipsum </span>
+                                        <span class="team_score"> 0</span>
+                                    </div>
+                                    </div>
+                                <div class="time">
+                                    <span>13.04.2023 </span>21:00
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-2 ">
+                        <a href="#" class="games_link" style="text-decoration: dashed">
+                            <div class="row">
+                                <div class="col-6 col-lg-12">
+                                    <div class="game_section">
+                                        <img src="https://picsum.photos/24/25" class="game_img" alt="img">
+                                        <span class="team_name"> Lorem </span>
+                                        <span class="team_score"> 0</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-12">
+                                    <div class="game_section2">
+                                        <img src="https://picsum.photos/23/23" class="game_img" alt="img">
+                                        <span class="team_name2"> Ipsum </span>
+                                        <span class="team_score"> 1</span>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <span>11.04.2023 </span>15:00
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+    </section>
+
+    <section class="top_news">
+        <h3 class="top_new_title"> Gli imperidibili </h3>
+        <a class="top_link" href="#"> Lorem A</a>
+        <a class="top_link" href="#"> Lorem B</a>
+        <a class="top_link" href="#"> Lorem C</a>
+    </section>
+
+    <div class="cont-area1">
+        <div id="area1">
+            <section>
+                <header>
+                    <h2 class="section2_title"> In primo piano </h2>
+                </header>
+
+                <div class="double_article">
+                    <div class="first_col">
+                        <article class="art1">
+                            <a class="link_art1" href="#"> <img class="art1_img" src="https://picsum.photos/584/292" alt="img" title="image" ></a>
+
+                            <h2 class="art1_title"> LOREM IPSUM !</h2>
+                            <div class="info_art1">
+                                <div class="ArticleMeta_author__QbDxL">Niccolò Lentini</div>
+                                <time datetime="2023-04-17T09:00:40+02:00"><b>17<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->09:00</time>
+                            </div>
+                            <hr>
+
+                            <div class="container_link_art1" style="padding-bottom: 1rem">
+                                <a class="link_art1" href="#">Lorem ipsum ></a>
+                                <a class="link_art1" href="#">Lorem ipsum ></a>
+                            </div>
+                        </article>
+
+                        <div class="grid" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); row-gap: 54px; column-gap: 20px">
+                            <article class="grid_article">
+                                <a class="grid_link" href="#">
+                                    <div class="grid_img_container">
+                                        <img src="https://picsum.photos/280/141" class="grid_img" alt="img">
+                                    </div>
+                                </a>
+                                <h2 class="grid_art1_title">
+                                    <a class="grid_title1_link" href="#">
+                                    Lorem ipsum dolor sit amet
+                                    </a>
+                                </h2>
+
+                                <div class="infogrid_article">
+                                    <div>
+                                        <time datetime="2023-04-08T07:40:30+02:00"><b>08<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->9:51</time>
+                                    </div>
+                                    <div>
+                                        <div class="articlePosition"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Firenze</span>
+                                        </div>
+                                    </div></div>
+                            </article>
+
+                            <article class="grid_article">
+                                <a class="grid_link" href="#">
+                                    <div class="grid_img_container">
+                                        <img src="https://picsum.photos/282/141" class="grid_img" alt="img">
+                                    </div>
+                                </a>
+                                <h2 class="grid_art1_title">
+                                    <a class="grid_title1_link" href="#">
+                                        Lorem ipsum dolor sit amet
+                                    </a>
+                                </h2>
+
+                                <div class="infogrid_article">
+                                    <div>
+                                        <time datetime="2023-04-08T07:40:30+02:00"><b>11<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->21:40</time>
+                                    </div>
+                                    <div>
+                                        <div class="articlePosition"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Milano</span>
+                                        </div>
+                                    </div></div>
+                            </article>
+
+                            <article class="grid_article">
+                                <a class="grid_link" href="#">
+                                    <div class="grid_img_container">
+                                        <img src="https://picsum.photos/281/141" class="grid_img" alt="img">
+                                    </div>
+                                </a>
+                                <h2 class="grid_art1_title">
+                                    <a class="grid_title1_link" href="#">
+                                        Lorem ipsum dolor sit amet
+                                    </a>
+                                </h2>
+
+                                <div class="infogrid_article">
+                                    <div>
+                                        <time datetime="2023-04-08T07:40:30+02:00"><b>09<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->10:40</time>
+                                    </div>
+                                    <div>
+                                        <div class="articlePosition"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Roma</span>
+                                        </div>
+                                    </div></div>
+                            </article>
+
+                            <article class="grid_article">
+                                <a class="grid_link" href="#">
+                                    <div class="grid_img_container">
+                                        <img src="https://picsum.photos/282/140" class="grid_img" alt="img">
+                                    </div>
+                                </a>
+                                <h2 class="grid_art1_title">
+                                    <a class="grid_title1_link" href="#">
+                                        Lorem ipsum dolor sit amet
+                                    </a>
+                                </h2>
+
+                                <div class="infogrid_article">
+                                    <div>
+                                        <time datetime="2023-04-08T07:40:30+02:00"><b>17<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->9:00</time>
+                                    </div>
+                                    <div>
+                                        <div class="articlePosition"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Palermo</span>
+                                        </div>
+                                    </div></div>
+                            </article>
+                        </div>
+
+                        <article class="art2" style="padding-top: 1rem">
+                            <header class="art2_header">
+                                <h2 class="art2_title">
+                                    <b> Il video del giorno </b>
+                                </h2>
+                            </header>
+
+                            <a class="link_art1" href="#"> <img class="art2_img" src="https://picsum.photos/583/293" alt="img" title="image" ></a>
+
+                            <h2 class="art1_title"> Ut enim ad minim venia</h2>
+                            <div class="info_art1">
+                                <div class="ArticleMeta_author__QbDxL">Niccolò Lentini</div>
+                                <time datetime="2023-04-17T09:00:40+02:00"><b>15<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->12:00</time>
+                            </div>
+
+
+
+                        </article>
+                    </div>
+
+                    <div class="second_col">
+                        <article class="art3">
+                            <a href="#" class="link_img_art3">
+                                <div class="col2_img_container">
+                                    <img class="art3_img" alt="img" src="https://picsum.photos/352/176">
+                                </div>
+                            </a>
+
+                            <h2 class="art3-4_title">
+                                <a href="#" class="link_title_art3-4">
+                                    Excepteur sint obcaecat cupiditat
+                                </a>
+                            </h2>
+
+                            <div class="infogrid_article">
+                                <div>
+                                    <time datetime="2023-04-08T13:21:42+02:00"><b>08<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->13:21</time>
+                                </div>
+                                <div>
+                                    <div class="articlePosition"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">UniFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="art4">
+                            <a class="link_img_art4">
+                                <div class="art4_img_cont">
+                                    <img src="https://picsum.photos/349/176" class="art4_img" alt="img">
+                                </div>
+                            </a>
+
+                            <h2 class="art3-4_title">
+                                <a href="#" class="link_title_art3-4">
+                                    Lorem ipsum dolor sit amet
+                                </a>
+                            </h2>
+
+                            <div class="infogrid_article">
+                                <div>
+                                    <time datetime="2023-04-08T13:21:42+02:00"><b>10<!-- -->.<!-- -->04<span class="ArticleMeta_year__9_DUB">.<!-- -->2023</span></b>&nbsp;<!-- -->08:00</time>
+                                </div>
+                                <div>
+                                    <div class="articlePosition"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Novità</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <section class="swiper-container">
+        <header class="swiper_header">
+            <h2 class="swiper_title">
+               <b>Lorem Ipsum</b>
+            </h2>
+        </header>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/241/121">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum A</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/240/121">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum B</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/240/120">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum C</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/240/122">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum D</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/241/120">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum E</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/239/121">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum F</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/240/123">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum G</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/239/123">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum H</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="swiper_article">
+                                <a class="swiper_art_img_link" href="#">
+                                    <div class="swiper_art_img_container">
+                                        <img class="swiper_art_img" alt="img" src="https://picsum.photos/240/121">
+                                    </div>
+                                </a>
+                                <h2 class="swiper_art_title">
+                                    <a href="#" class="swiper_art_title">
+                                        <b>Lorem Ipsum I</b>
+                                    </a>
+                                </h2>
+                                <div class="swiper_infobox">
+                                    <div>
+                                        <time datetime="2023-04-09T14:08:08.000Z"><b>09.04<span class="ArticleMeta_year__9_DUB">.2023</span></b>&nbsp;16:08</time>
+                                    </div>
+                                    <div>
+                                        <div class="ArticleMeta_taglist__BDQWz"><span class="ArticleMeta_tag___n9ok ArticleMeta_mainTag__c_9xK">Lorem</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+
+    </section>
+
+
+
+    <footer class="page-footer">
+        <nav class="pre-footer">
+            <div class="row">
+                <div class="col-6 col-lg-2">
+                    <header class="section-title-header">
+                        <h2 class="section-title" style="color:white;">
+                            Contatti
+                        </h2>
+                    </header>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem A</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem B</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem C</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem D</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem E</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem F</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem G</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <header class="section-title-header">
+                        <h2 class="section-title" style="color:white;">
+                            Chi siamo
+                        </h2>
+                    </header>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem A</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem B</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem C</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem D</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <header class="section-title-header">
+                        <h2 class="section-title" style="color:white;">
+                            Dove siamo
+                        </h2>
+                    </header>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem A</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem B</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem C</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem D</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem E</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <header class="section-title-header">
+                        <h2 class="section-title" style="color:white;">
+                            Social
+                        </h2>
+                    </header>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem A</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem B</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem C</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <header class="section-title-header">
+                        <h2 class="section-title" style="color:white;">
+                            Lorem
+                        </h2>
+                    </header>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem A</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem B</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Lorem D</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem E</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem F</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem G</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <header class="section-title-header">
+                        <h2 class="section-title" style="color:white;">
+                            Ipsum
+                        </h2>
+                    </header>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="footer-link">Lorem A</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem B</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem C</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem D</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lorem E</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+        </nav>
+    </footer>
+
+</div>
+<br>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous">
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="script.js"> </script>
+
+</body>
+</html>
