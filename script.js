@@ -45,4 +45,22 @@ function initSwiper() {
 window.addEventListener('load', initSwiper);
 
 
+const searchButton = document.getElementById("search-button");
+const searchOverlay = document.getElementById("search-overlay");
+const searchClose = document.getElementById("search-close");
+
+searchButton.addEventListener("click", function() {
+    searchOverlay.style.display = "block";
+});
+
+searchClose.addEventListener("click", function() {
+    searchOverlay.style.display = "none";
+});
+
+searchOverlay.addEventListener("click", function(event) {
+    if (event.target === searchOverlay) {
+        searchOverlay.style.display = "none";
+    }
+});
+
 

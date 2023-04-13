@@ -36,7 +36,18 @@
 
         <div class="d-flex justify-content-end align-items-center" style="flex-grow: 1;">
             <a href="#" class="btn search btn-outline-light">
-                <span class="bi bi-search"></span>
+                <span class="bi bi-search" id="search-button"></span>
+
+                <div id="search-overlay">
+                    <button id="search-close"><i class="bi bi-x-lg" ></i></button>
+                    <form>
+                        <label>
+                            <input type="text" placeholder="Cerca su Tuttosport...">
+                        </label>
+                        <i class="bi bi-search" style="color: #ffffff;"></i>
+                    </form>
+                </div>
+
             </a>
             <span class="divisor">_</span>
             <button class="btn btn-outline-danger me-2 mx-2"><i class="fas fa-video"></i> <strong>LIVE</strong> </button>
