@@ -572,7 +572,13 @@
 .swiper {
     width: 100%;
     height: 100%;
-    margin-bottom: 40px;
+}
+.mySwiper {
+    position: relative;
+}
+
+.swiper-wrapper{
+    padding-bottom: 6rem;
 }
 
 .swiper-slide {
@@ -591,9 +597,20 @@
     object-fit: cover;
 }
 
-.swiper-pagination, .swiper-button-next, .swiper-button-prev{
-    margin-top: 1rem;
-    color: #8B351D
+.swiper-btn-next {
+    color: #8B351D;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    z-index: 2;
+}
+
+.swiper-btn-prev {
+    color: #8B351D;
+    position: absolute;
+    top: 40px;
+    right: 3px;
+    z-index: 2;
 }
 
 .swiper_art_title {
@@ -723,6 +740,25 @@
     font-size: 24px;
     color: white;
 }
+.social-footer-list{
+    display: flex;
+    list-style-type: none;
+    border-bottom: 2px solid #5b5555;
+    padding-top: 1rem;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+.social-list-item{
+    margin-right: 1rem;
+}
+
+.social-footer-link{
+    font-size: 13px;
+    line-height: 16px;
+    color: white;
+    text-decoration: dashed;
+}
 
 @media screen and (max-width: 1023px){
     .navbar{
@@ -733,6 +769,9 @@
         order: 4;
     }
 
+    .offcanvas-start{
+        width: 100%;
+    }
 
     .btn-outline-danger, .bi-bell, .bi-person, .bell, .person {
         display: none;
