@@ -24,6 +24,16 @@
     margin-left: 2rem;
 }
 
+.mobile-version{
+    display: none;
+}
+
+.right-canvas-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .navbar-toggler {
     color: white;
     background-color: rgba(0,0,0,.125);
@@ -35,7 +45,7 @@
     margin-left: 1rem;
 }
 
-.responsive {
+.responsive, .responsive2 {
     width: 216px;
     height: auto;
     margin: 0;
@@ -836,6 +846,10 @@
     .art2_img {
         width: 100%;
     }
+
+    .mobile-version{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 238px){
@@ -854,6 +868,12 @@
 
     .responsive {
         width: 150px;
+        margin-left: 0;
+    }
+
+    .responsive2{
+        margin-left: 0;
+        width: 180px;
     }
 
     .big_title {
@@ -904,5 +924,10 @@
     }
     .top_link{
         font-size: 20px;
+    }
+
+    .mobile-version{
+        display: block;
+        margin-right: 0;
     }
 }
